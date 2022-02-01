@@ -1,4 +1,4 @@
-import { renderCharacter, renderCar } from '../utils.js';
+import { renderCharacter, renderCar, renderSoda } from '../utils.js';
 const test = QUnit.test;
 
 test('renderCharacter should return a <div> with character information', (expect) => {
@@ -21,5 +21,20 @@ test('renderCar should return a <li> with car string', (expect) => {
         'Acura',
     ]);
     
+    expect.equal(actual.outerHTML, expected);
+});
+
+test('renderSoda should return a <div> with soda nutrition info', (expect) => {
+    const expected = `<div class="sodas"><h2>Pepsi</h2><p>This soda has 150 calories and 41g of sugar per 355mL.</p></div>`;
+
+    const actual = renderSoda({
+        name: 'Pepsi',
+        nutrition: {
+            calories: 150,
+            servingSize: '355mL',
+            sugars: '41g',
+        },
+    });
+
     expect.equal(actual.outerHTML, expected);
 });

@@ -23,3 +23,17 @@ export function renderCar(car) {
 
     return li;
 }
+
+export function renderSoda(soda) {
+    const div = document.createElement('div');
+    div.classList.add('sodas');
+
+    const h2 = document.createElement('h2');
+    h2.textContent = soda.name;
+
+    const p = document.createElement('p');
+    p.textContent = `This soda has ${soda.nutrition.calories} calories and ${soda.nutrition.sugars} of sugar per ${soda.nutrition.servingSize}.`;
+
+    div.append(h2, p);
+    return div;
+}

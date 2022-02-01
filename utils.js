@@ -15,3 +15,11 @@ export function renderCharacter(character) {
     return div;
 }
 
+export function renderCar(car) {
+
+    const li = document.createElement('li');
+    li.classList.add('cars');
+    li.textContent = car;
+
+    return li;
+}

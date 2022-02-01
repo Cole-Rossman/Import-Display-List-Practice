@@ -1,4 +1,4 @@
-import { renderCharacter } from '../utils.js';
+import { renderCharacter, renderCar } from '../utils.js';
 const test = QUnit.test;
 
 test('renderCharacter should return a <div> with character information', (expect) => {
@@ -11,5 +11,16 @@ test('renderCharacter should return a <div> with character information', (expect
         dangerLevel: 10,
     });
 
+    expect.equal(actual.outerHTML, expected);
+});
+
+test('renderCar should return a <li> with car string', (expect) => {
+    const expected = `<li class="cars">Acura</li>`;
+        
+    const actual = renderCar([
+        'Acura',
+    ]);
+
+    
     expect.equal(actual.outerHTML, expected);
 });

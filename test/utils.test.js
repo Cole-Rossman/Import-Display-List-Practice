@@ -20,7 +20,6 @@ test('renderCar should return a <li> with car string', (expect) => {
     const actual = renderCar([
         'Acura',
     ]);
-
     
     expect.equal(actual.outerHTML, expected);
 });

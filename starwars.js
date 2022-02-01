@@ -24,5 +24,3 @@ export const characters = [{
     dangerLevel: 7,
 },
 ];
-
-export const cars = ['Acura', 'BMW', 'Porsche', 'Ferrari', 'Toyota', 'Lexus', 'Mercedes'];

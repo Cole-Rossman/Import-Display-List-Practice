@@ -1,26 +1,26 @@
 export const characters = [{
     name: 'Darth-Vader',
+    image: './assets/darth-vader.png',
     affiliation: 'Sith',
     dangerLevel: 10,
-    image: './assets/darth-vader.png',
 
 },
 {
     name: 'Yoda',
+    image: './assets/yoda.png', 
     affiliation: 'Jedi',
     dangerLevel: 10,
-    image: './assets/yoda.png', 
 },
 {
     name: 'Boba-Fett',
+    image: './assets/boba-fett.png', 
     affiliation: 'Bounty-Hunter',
     dangerLevel: 8,
-    image: './assets/boba-fett.png', 
 },
 {
     name: 'Leia',
+    image: './assets/leia.png', 
     affiliation: 'Rebel-Alliance',
     dangerLevel: 7,
-    image: './assets/leia.png', 
 },
 ];

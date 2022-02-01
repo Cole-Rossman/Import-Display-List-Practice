@@ -1,25 +1,25 @@
-export const starWarsCharacters = [{
+export const characters = [{
     name: 'Darth-Vader',
-    affiliation: 'sith',
+    affiliation: 'Sith',
     dangerLevel: 10,
     image: './assets/darth-vader.png',
 
 },
 {
     name: 'Yoda',
-    affiliation: 'jedi',
+    affiliation: 'Jedi',
     dangerLevel: 10,
     image: './assets/yoda.png', 
 },
 {
     name: 'Boba-Fett',
-    affiliation: 'bounty hunter',
+    affiliation: 'Bounty-Hunter',
     dangerLevel: 8,
     image: './assets/boba-fett.png', 
 },
 {
     name: 'Leia',
-    affiliation: 'rebel alliance',
+    affiliation: 'Rebel-Alliance',
     dangerLevel: 7,
     image: './assets/leia.png', 
 },

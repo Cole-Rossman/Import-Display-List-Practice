@@ -37,3 +37,17 @@ export function renderSoda(soda) {
     div.append(h2, p);
     return div;
 }
+
+export function renderTree(tree) {
+    const div = document.createElement('div');
+    div.classList.add('trees');
+
+    const h2 = document.createElement('h2');
+    h2.textContent = tree.name;
+
+    const p = document.createElement('p');
+    p.textContent = `This incredible tree can be found in the following states: ${tree.states} and has a lifespan range of ${tree.lifespan} years.`;
+
+    div.append(h2, p);
+    return div;
+}

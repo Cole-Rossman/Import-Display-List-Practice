@@ -1,4 +1,4 @@
-import { renderCharacter, renderCar, renderSoda } from '../utils.js';
+import { renderCharacter, renderCar, renderSoda, renderTree } from '../utils.js';
 const test = QUnit.test;
 
 test('renderCharacter should return a <div> with character information', (expect) => {
@@ -37,4 +37,17 @@ test('renderSoda should return a <div> with soda nutrition info', (expect) => {
     });
 
     expect.equal(actual.outerHTML, expected);
+});
+
+test('renderTree should return a <div> with tree information', (expect) => {
+    const expected = `<div class="trees"><h2>Douglas fir</h2><p>This incredible tree can be found in the following states: Oregon, Washington, Idaho, Utah, Nevada and has a lifespan range of 500-1000 years.</p></div>`;
+
+    const actual = renderTree({
+        name: 'Douglas fir',
+        states: ['Oregon', ' Washington', ' Idaho', ' Utah', ' Nevada'],
+        lifespan: '500-1000',
+    });
+
+    expect.equal(actual.outerHTML, expected);
+
 });

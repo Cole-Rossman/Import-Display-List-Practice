@@ -1,28 +1,38 @@
 // import functions and grab DOM elements
-import { renderCharacter, renderCar } from './utils.js';
+import { renderCharacter, renderCar, renderSoda } from './utils.js';
 import { characters } from './starwars.js';
 import { cars } from './cars.js';
+import { sodas } from './sodas.js';
 
-const divInfo = document.getElementById('character-info');
-const ulInfo = document.getElementById('cars-list');
+const divStarWars = document.getElementById('character-info');
+const ulCars = document.getElementById('cars-list');
+const divSodas = document.getElementById('soda-info');
 
 
 function starWarsFunction() {
     for (const character of characters) {
         const div = renderCharacter(character);
-        divInfo.append(div);
+        divStarWars.append(div);
     }
 }
 
 function carFunction() {
     for (const car of cars) {
         const ul = renderCar(car);
-        ulInfo.append(ul);
+        ulCars.append(ul);
+    }
+}
+
+function sodaFunction() {
+    for (const soda of sodas) {
+        const div = renderSoda(soda);
+        divSodas.append(div);
     }
 }
 
 carFunction();
 starWarsFunction();
+sodaFunction();
 // let state
 
 // set event listeners 

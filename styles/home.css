@@ -2,3 +2,30 @@
     width: 200px;
     height: 200px;
 }
+
+#section-1 {
+    border: 10px blueviolet solid;
+    border-radius: 2%;
+    padding: 30px;
+}
+#section-2 {
+    border: 10px rgb(230, 51, 10) solid;
+    border-radius: 2%;
+    padding: 30px;
+}
+#section-3 {
+    border: 10px rgb(230, 10, 168) solid;
+    border-radius: 2%;
+    padding: 30px;
+}
+#section-3 {
+    border: 10px rgb(64, 216, 13) solid;
+    border-radius: 2%;
+    padding: 30px;
+}
+#section-4 {
+    border: 10px rgb(14, 219, 233) solid;
+    border-radius: 2%;
+    padding: 30px;
+}
+
